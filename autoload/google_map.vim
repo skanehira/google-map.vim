@@ -28,10 +28,11 @@ function google_map#open(...) abort
   endif
 
   if a:0 > 1
-    let cmd = printf('%s %s', g:google_map_open_cmd, printf(s:google_map_routes_url, a:1, a:2))
+    let url = printf(s:google_map_routes_url, a:1, a:2)
   else
-    let cmd = printf('%s %s', g:google_map_open_cmd, printf(s:google_map_address_url, a:1))
+    let url = printf(s:google_map_address_url, a:1)
   endif
+  let cmd = printf('%s %s', g:google_map_open_cmd, url)
 
   call job_start(cmd, {
         \ 'err_cb': function('s:err_cb'),
