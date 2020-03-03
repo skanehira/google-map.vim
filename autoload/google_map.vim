@@ -8,7 +8,7 @@ let s:google_map_routes_url = 'https://www.google.com/maps/dir/%s/%s'
 function s:get_open_cmd() abort
   if has('mac')
     return 'open'
-  else has('linux')
+  elseif has('linux')
     return 'xdg-open'
   endif
 endfunction
