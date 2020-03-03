@@ -1,6 +1,8 @@
 # google-map.vim
 This is plugin that can use google maps on Vim.
 
+![](https://i.imgur.com/BelTJsm.gif)
+
 ## Rquirements
 - Vim 7.4.1274 ~
 
