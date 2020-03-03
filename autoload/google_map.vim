@@ -2,8 +2,8 @@
 " Author: skanehira
 " License: MIT
 "
-let s:google_map_address_url = 'https://www.google.com/maps\?q=%s'
-let s:google_map_routes_url = 'https://www.google.com/maps/dir/%s/%s'
+let s:google_map_address_url = '"https://www.google.com/maps\?q=%s"'
+let s:google_map_routes_url = '"https://www.google.com/maps/dir/%s/%s"'
 
 function s:get_open_cmd() abort
   if has('mac')

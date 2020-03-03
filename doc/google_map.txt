@@ -71,8 +71,8 @@ COMMANDS					*google_map-commands*
 	if have 2 args, then will serach routes.
 		e.g `:GoogleMap tokyo kyoto`
 	if you wanto use white space,
-	please use enclose in `"` and use `\`.
-		e.g `:GoogleMap "tokyo\ minatoku"`
+	please use enclose in and use `\`.
+		e.g `:GoogleMap tokyo\ minatoku`
 
 ------------------------------------------------------------------------------
 FUNCTIONS					*google_map-functions*
