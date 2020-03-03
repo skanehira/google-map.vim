@@ -22,6 +22,11 @@ function s:echo_err(msg) abort
 endfunction
 
 function google_map#open(...) abort
+  if !executable(g:google_map_open_cmd)
+    call s:echo_err('not found open command: ' . g:google_map_open_cmd)
+    return
+  endif
+
   if a:0 > 1
     let cmd = printf('%s %s', g:google_map_open_cmd, printf(s:google_map_routes_url, a:1, a:2))
   else
